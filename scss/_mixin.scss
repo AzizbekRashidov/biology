@@ -1,0 +1,18 @@
+@mixin Button{
+    padding: 15px 30px;
+    color: var(--color-White);
+    font-family: "Roboto";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: var(--color-BlueSky);
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover{
+        color: var(--color-BlueSky);
+        background: var(--color-White);
+        border: 1px solid var(--color-BlueSky);
+    }
+}

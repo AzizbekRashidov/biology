@@ -1,0 +1,83 @@
+.footer{
+    margin-top: 51px;
+
+    background: linear-gradient(180deg, #058AFF 0%, rgba(57, 55, 206, 0.87) 97.91%);
+    
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__br{
+        display: none;
+    }
+
+    &__paragraph{
+        padding: 45px 0px;
+        color: #FFF;
+        font-family:" Roboto";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; 
+    }
+
+    &__schedule{
+        display: flex;
+        align-items: center;
+        gap: 60px;
+    }
+
+    &__button{
+        @include Button;
+        padding: 15px 31px;
+        background-color: #fff;
+        color: #058AFF;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .footer .container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:630px){
+
+    .footer__paragraph{
+        font-size: 16px;
+    }
+    .footer .schedule{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__br{
+        display: block;
+    }
+
+    .footer__button{
+        padding: 10px 20px;
+    }
+
+
+} 
+
+@media only screen and (max-width:485px){
+    .footer__icon{
+        order: 3;
+    }
+
+    .footer__button{
+        order: -3;
+        margin-top: -100px;
+    }
+
+    .footer__icon{
+        margin-top: 50px;
+        margin-left: -280px;
+    }
+} 
+

@@ -1,0 +1,94 @@
+.sun {
+    margin-top: 151px;
+    padding-top: 75px;
+    padding-bottom: 76px;
+    background: #E8ECFF4D;
+
+
+    &__heading {
+        color: #058AFF;
+        text-align: center;
+        font-family: "Roboto";
+        font-size: 31.25px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__text {
+        color: var(--color-Black);
+        text-align: center;
+        font-family: "Roboto";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        opacity: 0.7;
+        padding-bottom: 30px;
+    }
+
+    &__label {
+        padding: 30px 25px;
+        border-radius: 10px;
+        border: 1px solid #058AFF;
+    }
+
+    &__input {
+        border: none;
+        opacity: 1;
+        background: #E8ECFF4D;
+        color: #000;
+        font-family: "Roboto";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        opacity: 0.6;
+    }
+
+    &__button {
+        opacity: 1;
+        @include Button;
+        padding: 14px 38px;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__link {
+        @include Button;
+        padding: 20px 138px;
+        display: none;
+    }
+
+    @media only screen and (max-width:535px) {
+        .sun__button {
+            display: none;
+        }
+
+
+
+        .sun__link {
+            display: block;
+            margin-top: 30px;
+            margin-left: -15px;
+        }
+
+        .sun__label {
+            padding: 25px 20px;
+            margin-right: 10px;
+            margin-left: -10px;
+        }
+    }
+
+
+
+
+
+
+}

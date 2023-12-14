@@ -1,0 +1,48 @@
+.shine{
+    margin-top: 60px;
+
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    &__heading{
+        color: var(--color-Black);
+        font-family: "Roboto";
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; 
+        margin: 0;
+        padding: 0;
+    }
+
+    &__text{
+        color: #000;
+        font-family: "Roboto";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; 
+        opacity: 0.7;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .shine__list{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+} 
+
+@media only screen and (max-width:500px){
+    .shine__list{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .shine__item{
+        padding-bottom: 25px;
+        text-align: center;
+    }
+} 

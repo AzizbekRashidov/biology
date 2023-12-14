@@ -1,0 +1,164 @@
+.moon{
+    margin-top: 151px;
+
+    &__list{
+        display: flex;
+        align-items: center;
+        margin-left: -38px;
+        justify-content: space-between;
+        gap: 27px;
+        
+    }   
+
+    &__info{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title{
+        color: var(--color-Black);
+        font-family: "Roboto";
+        font-size: 48.44px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+    }
+
+    &__chart{
+        background-color: var(--color-BlueSky);
+        width: 62.355px;
+        height: 280.959px;
+        display: block;
+           
+    }
+
+    &__item{
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border: 1px solid #0082F4;
+        box-shadow: 0px 0px 7px 4px rgba(0, 0, 0, 0.06);
+        max-width: 423px;
+        width: 100%;
+        
+
+    }
+
+    &__img{
+        position: absolute;
+        transform: translateX(50%);
+    }
+
+    &__div{
+        margin-left: 72px;
+    }
+
+
+    &__heading{
+        padding-top: 30px;
+        color: var(--color-Black);
+        font-family: "Roboto";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; 
+        opacity: 0.7;
+        max-width: 203px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 40px;
+    }
+
+    &__heading:nth-child(2){
+        max-width: 257px;
+        width: 100%;
+    }
+
+    &__text{
+        color: var(--color-Black);
+        font-family: "Roboto";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        opacity: 0.9; 
+        max-width: 153px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 9px;
+        padding-right: 12px;
+
+    }
+
+    &__schedule{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__paragraph{
+        color: var(--color-Black);
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        opacity: 0.5;
+        max-width: 162px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 30px;
+        margin-left: 30px;
+    }
+
+}
+
+@media only screen and (max-width:1024px) {
+    .moon__list{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width:720px) {
+    .moon__title{
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width:530px){
+
+    .moon{
+        margin-top: 75px ;
+    }
+    .moon__info{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .moon__title{
+        text-align: center;
+    }
+} 
+
+@media only screen and (max-width:370px){
+    .moon__heading{
+        font-size: 16px;
+        max-width: 200px;
+    }
+
+    .moon__text{
+        font-size: 16px;
+    }
+
+    .moon__paragraph{
+        font-size: 16px;
+    }
+} 

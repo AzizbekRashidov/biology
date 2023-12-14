@@ -1,0 +1,137 @@
+.hero{
+    margin-top: 151px;
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    &__heading{
+        color: #0080FD;
+        font-family: "Roboto";
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2.5px;
+        text-transform: uppercase; 
+        margin: 0;
+        padding: 0;
+        padding-bottom: 5px;
+    
+    }
+
+    &__text{
+        color: var(--color-Black);
+        font-family: "Roboto";
+        font-size: 60.55px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%; 
+        max-width: 531px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 20px;
+
+
+    }
+
+    &__br{
+        display: none;
+    }
+
+    &__span{
+        color: var(--color-BlueSky);
+        font-family: "Roboto";
+        font-size: 60.55px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%;
+
+    }
+
+    &__paragraph{
+        color: var(--color-Black);
+        font-family: "Roboto";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; 
+        opacity: 0.6;
+        max-width: 436px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 30px;
+}   
+
+    &__button{
+        @include Button;
+    }
+
+    &__link{
+        margin-left: 40px;
+        border: 1px solid whitesmoke;
+        background-color: #fff;
+        padding: 17px 34px;
+        border-radius: 10px;
+    }
+}
+
+.hero__link::after{
+    content: "  Play Vedio";
+    color: #000;
+}
+
+@media only screen and (max-width:900px){
+    .hero .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+
+    .hero__info{
+        order: 3;
+    }
+
+    .hero__picture{
+        order: -3;
+    }
+
+    .hero__info{
+        text-align: center;
+    }
+
+
+} 
+
+@media only screen and (max-width:435px){
+
+    .hero{
+        margin-top: 50px;
+    }
+    
+    .hero__br{
+        display: block;
+    }
+
+    .hero__button{
+        margin-bottom: 25px;
+    }
+
+    .hero__link{
+        margin-left: -5px;
+    }
+
+    .hero__text{
+        font-size: 36px;
+    }
+    .hero__span{
+        font-size: 36px;
+    }
+
+} 

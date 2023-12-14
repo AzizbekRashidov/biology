@@ -1,0 +1,96 @@
+.about{
+    margin-top: 150px;
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__heading{
+        color: var(--color-BlueSky);
+        font-family: "Roboto";
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 2.5px;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__text{
+        color: var(--color-Black);
+        font-family: "Roboto";
+        font-size: 49px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%; 
+        max-width: 496px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__paragraph{
+        color: var(--color-Black);
+        font-family:"Roboto";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; 
+        max-width: 583px;
+        width: 100%;
+        opacity: 0.6;
+    }
+
+    &__button{
+        @include Button;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .about .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about__info{
+        order: 3;
+    }
+
+    .about__img{
+        order: -3;
+    }
+
+    .about__info{
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .about__text{
+        margin-left: 20px;
+    }   
+
+
+} 
+
+@media only screen and (max-width:435px){
+   .about{
+    margin-top: 75px;
+   }
+   
+    .about__text{
+        font-size: 36px;
+        margin-left: -10px;
+    }
+
+
+    .about__paragraph{
+        font-size: 18px;
+    }
+} 
+
+
+
